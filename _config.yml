@@ -108,9 +108,9 @@ analytics:
 # Site Author
 author:
   name             : "Guilherme Madureira"
-  avatar           : "/images/" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/avatar" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science Portfolio"
-  location         : "Liège"
+  location         : "Liège, BE"
   email            :
   links:
     - label: "Email"
