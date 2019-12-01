@@ -4,7 +4,7 @@ title: "Machine Learning Project: Heart Disease Prediction"
 date: 2019-12-01
 tags: [machine learning, data science]
 header:
-  image: "/images/heart_disease/"
+  image: "/images/"
 excerpt: "Machine Learning, Heart Disease, Data Science"
 mathjax: "true"
 
