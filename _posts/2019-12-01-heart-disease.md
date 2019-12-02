@@ -18,18 +18,18 @@ mathjax: "true"
 
   The presented solution is not the one I submitted, but a better one after learning about feature engineering.
 
-
 # 2. The Dataset and Visualization
 
-    The dataset has 14 columns with different types and different scales. The first thing then it's to visualize the data and see if we can   already take out some information.
+  The dataset has 14 columns with different types and different scales. The first thing then it's to visualize the data and see if we can   already take out some information.
 
-    Unfortunately, the different scatter plots and histograms don't give too much insight about the data. However, some of the plots were quite interesting.
+  Unfortunately, the different scatter plots and histograms don't give too much insight about the data. However, some of the plots were quite interesting.
+
+  The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distribution. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
 
 
-    The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distribution. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
+# 3. Training and model selection
+  A started by using the simple LogisticRegression algorithm which works quite well. After separating the data into train and test data, I tried to tweak the parameters until a was satisfied with the accuracy and the log loss score. However, I soon realized that the size of the test set had a major impact on the score (either the accuracy and the log loss).
 
-
-# 4. Training and model selection
 
 
 
