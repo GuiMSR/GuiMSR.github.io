@@ -12,7 +12,9 @@ mathjax: "true"
 
 #  1.Introduction
 
-  The dataset comes from Driven Data ([Driven Data Website](https://drivendata.org)). The goal is to predict the probability of a patient having a heart disease/attack using measurements on patient health and cardiovascular statistics.  Data provided is a courtesy of the Cleveland Heart Disease Database via the UCI Machine Learning repository. Therefore, this was a competition where I finished 617th on 3905 competitors. My final private score was 0.35499 using the log loss metric : `−(1/n)∑n(i)=1[y(i)log(y^i)+(1−y(i))log(1−y^i)]`. Pretty good for my first machine learning and data science competition !!
+  The dataset comes from Driven Data ([Driven Data Website](https://drivendata.org)). The goal is to predict the probability of a patient having a heart disease/attack using measurements on patient health and cardiovascular statistics.  Data provided is a courtesy of the Cleveland Heart Disease Database via the UCI Machine Learning repository.
+
+  This was a competition where I finished 617th on 3905 competitors. My final private score was 0.35499 using the log loss metric : `−(1/n)∑n(i)=1[y(i)log(y^i)+(1−y(i))log(1−y^i)]`. Pretty good for my first machine learning and data science competition !!
 
   The presented solution is not the one I submitted, but a better one after learning about feature engineering.
 
