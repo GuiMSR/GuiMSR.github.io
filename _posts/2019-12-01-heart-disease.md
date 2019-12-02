@@ -24,7 +24,7 @@ mathjax: "true"
     Unfortunately, the different scatter plots and histograms don't give too much insight about the data. However, some of the plots were quite interesting.
 
 
-    The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns (resting_blood_pressure, serum_cholesterol_mg_per_dl and max_heart_rate_achieved) to have more "normal" distribution. The log of the column relatif to the old peak depression wasn't helping the model so I let it be.
+    The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distribution. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
 
 
 # 4. Training and model selection
