@@ -18,19 +18,20 @@ mathjax: "true"
 #  2.The dataset
 
   The dataset has 14 columns such as:
-    * slope_of_peak_exercise_st_segment
-    * thal
-    * resting_blood_pressure
-    * chest_pain_type (4 types)
-    * num_major_vessels
-    * fasting_blood_sugar_gt_120_mg_per_dl
-    * resting_ekg_results
-    * serum_cholesterol_mg_per_dl
-    * oldpeak_eq_st_depression
-    * sex
-    * age
-    * max_heart_rate_achieved
-    * exercise_induced_angina
+    1. slope_of_peak_exercise_st_segment
+    2. thal
+    3. resting_blood_pressure
+    4. chest_pain_type (4 types)
+    5. num_major_vessels
+    6. fasting_blood_sugar_gt_120_mg_per_dl
+    7. resting_ekg_results
+    8. serum_cholesterol_mg_per_dl
+    9. oldpeak_eq_st_depression
+    10. sex
+    11. age
+    12. max_heart_rate_achieved
+    13. exercise_induced_angina
+    14. heart_disease_present (our target value)
 
     As you can see, there are a lot of features of different types and different scales. The first thing then it's to visualize the data and see if we can already take out some information.
 
