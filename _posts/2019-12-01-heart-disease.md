@@ -30,6 +30,7 @@ mathjax: "true"
 # 3. Training and model selection
   A started by using the simple LogisticRegression algorithm which works quite well. After separating the data into train and test data, I tried to tweak the parameters until a was satisfied with the accuracy and the log loss score. However, I soon realized that the size of the test set had a major impact on the score (either the accuracy and the log loss).
 
+  *C=*
 
 
 
