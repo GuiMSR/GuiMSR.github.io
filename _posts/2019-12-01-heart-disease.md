@@ -7,6 +7,19 @@ header:
   image: "/images/heart/heart_back.jpg"
 excerpt: "Machine Learning, Heart Disease, Data Science"
 mathjax: "true"
+gallery:
+  -url: /images/heart/hist1.png
+  image_path: /images/heart/hist1.png
+  -url: /images/heart/hist2.png
+  image_path: /images/heart/hist2.png
+  -url: /images/heart/hist3.png
+  image_path: /images/heart/hist3.png
+  -url: /images/heart/hist4.png
+  image_path: /images/heart/hist4.png
+  -url: /images/heart/hist5.png
+  image_path: /images/heart/hist5.png
+  -url: /images/heart/max_heart_achieved_age.png
+  image_path: /images/heart/max_heart_achieved_age.png
 
 ---
 
@@ -23,6 +36,8 @@ mathjax: "true"
   The dataset has 14 columns with different types and different scales. The first thing then it's to visualize the data and see if we can  already take out some information.
 
   Unfortunately, the different scatter plots and histograms don't give too much insight about the data. However, some of the plots were quite interesting.
+
+  {% include gallery class="full" caption="Interesting plots and histograms." %}
 
   The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distributions. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
 
@@ -49,6 +64,6 @@ The final scores for the Logistic Regression are:
 * The log loss value for the training: 0.3497573391237319
 * The log loss value for the test: 0.36879487173164766
 
-# 4. Graphs of the model
+# 4. Validation and Learning curves
 
-Here are some graphs to visualize the model and to see what is happening to the hyperparameters.
+Here are the validation and learning curves:
