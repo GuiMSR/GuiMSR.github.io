@@ -21,6 +21,11 @@ gallery:
   -url: /images/heart/max_heart_achieved_age.png
   image_path: /images/heart/max_heart_achieved_age.png
 
+gallery2:
+  -url:  /images/heart/validation_curves.png
+  image_path:  /images/heart/validation_curves.png
+  -url: learning_curves.png
+  image_path: learning_curves.png
 ---
 
 #  1.Introduction
@@ -67,3 +72,7 @@ The final scores for the Logistic Regression are:
 # 4. Validation and Learning curves
 
 Here are the validation and learning curves:
+
+{% include gallery id="gallery2" class="full" caption="Validation and learning curves." %}
+
+# 5.Conclusion
