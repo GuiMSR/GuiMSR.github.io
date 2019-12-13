@@ -20,40 +20,35 @@ mathjax: "true"
 
 # 2. The Dataset and Visualization
 
-  The dataset has 14 columns with different types and different scales. The first thing then it's to visualize the data and see if we can   already take out some information.
+  The dataset has 14 columns with different types and different scales. The first thing then it's to visualize the data and see if we can  already take out some information.
 
   Unfortunately, the different scatter plots and histograms don't give too much insight about the data. However, some of the plots were quite interesting.
 
-  The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distribution. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
+  The distribution of these particular columns can be quite challenging for the model. The boxplots of those columns also help to reach that conclusion. Therefore, I decided to go with the log of those columns to have more "normal" distributions. The log of the column relative to the old peak depression wasn't helping the model so I let it be.
 
 
-# 3. Training and model selection
-  A started by using the simple LogisticRegression algorithm which works quite well. After separating the data into train and test data, I tried to tweak the parameters until a was satisfied with the accuracy and the log loss score. However, I soon realized that the size of the test set had a major impact on the score (either the accuracy and the log loss).
+# 3. Model implementation
+  I started by using the simple LogisticRegression algorithm which works quite well for this dataset (let's not overly complicate things). After splitting the data into train and test data, I tried to tweak the parameters until a was satisfied with the accuracy and the log loss score. However, I soon realized that the size of the test set had a major impact on the score (either the accuracy and the log loss), and decided to go with a test size of 0.05 (5% of the data). It is really small, and may cause some overfitting. But the original dataset is small, and therefore there is not much of a problem to sacrifice 5% of the data, just to have a small idea of how the model is predicting on unseen data.
 
-  *C=*
+  To do the hyperparameters tuning, I used the grid search with 5 cross-validation folds
 
+  ````
+  parameters = {'C': (np.linspace(0.001,120)), 'penalty':('l1', 'l2')}
 
+  lgr = LogisticRegression()
+  clf = GridSearchCV(lgr, parameters, cv=5)
+  clf.fit(X_data, y_data.values.ravel())
+  ````
+And obtain `C=2.449959183673469` and the `l1` penalty with the **liblinear** solver. I chose this solver because it is the best one with a small dataset.
 
-Here's some basic text
+Afterwards I just trained the model and predicted the probabilities with `clf.predict_proba()` on the train and test set.
 
-And here's some *italics*
+The final scores for the Logistic Regression are:
+* train score: 0.847953216374269
+* The test score: 0.8888888888888888
+* The log loss value for the training: 0.3497573391237319
+* The log loss value for the test: 0.36879487173164766
 
-Here's some **bold** text
+# 4. Graphs of the model
 
-What about a [link](https://github.com/GuiMSR)
-
-Here's a bullet list:
-* item
-1. item
-
-Python code block:
-```Python
-  import numpy as np
-
-  def test_function(x, y):
-    z=np.sum(x,y)
-    return z
-```
-Here's some inline code `x+y`
-
-Here's some math: $$ 2*5 = 10 $$
+Here are some graphs to visualize the model and to see what is happening to the hyperparameters.
