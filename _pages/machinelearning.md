@@ -1,12 +1,13 @@
 ---
 layout: archives
 permalink: /machine-learning/
-title: "Machine Learning Posts by Tags"
+title: "Data Projects Posts by Tags"
 author_profile: true
 header:
   image: "/images/"
 ---
 
+{% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
