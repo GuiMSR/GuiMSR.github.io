@@ -77,6 +77,4 @@ Here are the validation and learning curves:
 
 # 5.Conclusion
 
-Ths is a simple Machine Learning algorithm that I made to first learn how works a data science competition and then to have some fun while experimenting with the new tools I have learned.
-
- 
+This is a simple Machine Learning algorithm that I made to first learn how works a data science competition and then to have some fun while experimenting with the new tools I have learned.
