@@ -24,8 +24,8 @@ gallery:
 gallery2:
   - url:  /images/heart/validation_curves.jpg
     image_path:  /images/heart/validation_curves.jpg
-  - url: learning_curves.jpg
-    image_path: learning_curves.jpg
+  - url: /images/heart/learning_curves.jpg
+    image_path: /images/heart/learning_curves.jpg
 ---
 
 #  1.Introduction
