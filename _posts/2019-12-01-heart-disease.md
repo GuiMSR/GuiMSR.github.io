@@ -2,7 +2,7 @@
 
 title: "Machine Learning Project: Heart Disease Prediction"
 date: 2019-12-01
-tags: [machine learning, data science]
+tags: [machine learning, logistic Regression, data science]
 header:
   image: "/images/heart/heart_back.jpg"
 excerpt: "Machine Learning, Heart Disease, Data Science"
