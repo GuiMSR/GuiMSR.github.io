@@ -8,24 +8,24 @@ header:
 excerpt: "Machine Learning, Heart Disease, Data Science"
 mathjax: "true"
 gallery:
-  -url: /images/heart/hist1.png
-  image_path: /images/heart/hist1.png
-  -url: /images/heart/hist2.png
-  image_path: /images/heart/hist2.png
-  -url: /images/heart/hist3.png
-  image_path: /images/heart/hist3.png
-  -url: /images/heart/hist4.png
-  image_path: /images/heart/hist4.png
-  -url: /images/heart/hist5.png
-  image_path: /images/heart/hist5.png
-  -url: /images/heart/max_heart_achieved_age.png
-  image_path: /images/heart/max_heart_achieved_age.png
+  - url: /images/heart/hist1.png
+    image_path: /images/heart/hist1.jpg
+  - url: /images/heart/hist2.png
+    image_path: /images/heart/hist2.jpg
+  - url: /images/heart/hist3.png
+    image_path: /images/heart/hist3.jpg
+  - url: /images/heart/hist4.png
+    image_path: /images/heart/hist4.jpg
+  - url: /images/heart/hist5.png
+    image_path: /images/heart/hist5.jpg
+  - url: /images/heart/max_heart_achieved_age.jpg
+    image_path: /images/heart/max_heart_achieved_age.jpg
 
 gallery2:
-  -url:  /images/heart/validation_curves.png
-  image_path:  /images/heart/validation_curves.png
-  -url: learning_curves.png
-  image_path: learning_curves.png
+  - url:  /images/heart/validation_curves.jpg
+    image_path:  /images/heart/validation_curves.jpg
+  - url: learning_curves.jpg
+    image_path: learning_curves.jpg
 ---
 
 #  1.Introduction
@@ -76,3 +76,7 @@ Here are the validation and learning curves:
 {% include gallery id="gallery2" class="full" caption="Validation and learning curves." %}
 
 # 5.Conclusion
+
+Ths is a simple Machine Learning algorithm that I made to first learn how works a data science competition and then to have some fun while experimenting with the new tools I have learned.
+
+ 
